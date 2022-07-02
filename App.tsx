@@ -1,6 +1,5 @@
 import React from "react"
 import { SafeAreaView, ScrollView, StatusBar, StyleSheet, Text, useColorScheme, View } from "react-native"
-
 import {
     Colors,
     DebugInstructions,
@@ -8,6 +7,8 @@ import {
     LearnMoreLinks,
     ReloadInstructions
 } from "react-native/Libraries/NewAppScreen"
+
+import { Form } from "./components/Form"
 
 type Props = {
     children: React.ReactNode
@@ -68,6 +69,10 @@ const App = () => {
                     </Section>
                     <Section title="Learn More">Read the docs to discover what to do next:</Section>
                     <LearnMoreLinks />
+                </View>
+
+                <View>
+                    <Form />
                 </View>
             </ScrollView>
         </SafeAreaView>
